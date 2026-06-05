@@ -14,7 +14,7 @@ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl)-->
                     groups="base.group_multi_currency"
                 />
             </xpath>
-             <xpath expr="//group[@name='sale']" position="inside">
+            <xpath expr="//group[@name='sale']" position="inside">
                 <field
                     name="customer_currency_id"
                     options="{'no_create': True}"
