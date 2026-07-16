@@ -1,6 +1,6 @@
 [project]
 name = "odoo-addons-oca-account-invoicing"
-version = "18.0.20260625.1"
+version = "18.0.20260716.0"
 dependencies = [
     "odoo-addon-account_billing==18.0.*",
     "odoo-addon-account_global_discount==18.0.*",
@@ -23,6 +23,7 @@ dependencies = [
     "odoo-addon-account_invoice_pricelist_sale==18.0.*",
     "odoo-addon-account_invoice_refund_line_selection==18.0.*",
     "odoo-addon-account_invoice_refund_link==18.0.*",
+    "odoo-addon-account_invoice_refund_link_sale==18.0.*",
     "odoo-addon-account_invoice_refund_reason==18.0.*",
     "odoo-addon-account_invoice_section_sale_order==18.0.*",
     "odoo-addon-account_invoice_send_template==18.0.*",
