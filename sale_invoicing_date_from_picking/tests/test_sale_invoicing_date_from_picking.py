@@ -17,7 +17,7 @@ class TestSaleInvoicingDateFromPicking(TransactionCase):
         cls.product = cls.env["product.product"].create(
             {
                 "name": "Test Product",
-                "type": "product",
+                "type": "consu",
             }
         )
         cls.sale_order = cls.env["sale.order"].create(

@@ -4,7 +4,7 @@
 {
     "name": "Sale Invoicing Date From Picking",
     "summary": "Applies the wizard date to invoices generated from pickings",
-    "version": "16.0.1.0.0",
+    "version": "18.0.1.0.0",
     "license": "AGPL-3",
     "category": "Accounting & Finance",
     "website": "https://github.com/OCA/account-invoicing",
