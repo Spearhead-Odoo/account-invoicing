@@ -16,7 +16,10 @@ class AccountPaymentRegister(models.TransientModel):
         return bool(self.env.company[MAPPING_TYPE.get(self.payment_type)] == "draft")
 
     def _create_payments(self):
-        payments = super()._create_payments()
         if self._check_payment_draft():
+            payments = super(
+                AccountPaymentRegister, self.with_context(no_cash_basis=True)
+            )._create_payments()
             payments.filtered(lambda p: p.state != "draft").action_draft()
-        return payments
+            return payments
+        return super()._create_payments()
